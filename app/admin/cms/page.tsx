@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 
-type SearchParams = Promise<Record<string, string | string[] | undefined>>;
-
-export const dynamic = "force-dynamic";
+type SearchParams = Promise<{
+  collection?: string | string[];
+  selectedId?: string | string[];
+}>;
 
 export const metadata: Metadata = {
   title: "Admin CMS",
