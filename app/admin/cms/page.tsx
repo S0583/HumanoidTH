@@ -6,6 +6,8 @@ type SearchParams = Promise<{
   selectedId?: string | string[];
 }>;
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Admin CMS",
   robots: { index: false, follow: false },
