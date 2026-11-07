@@ -42,7 +42,8 @@ export default function SidebarNav({ currentLang = "en" }: SidebarNavProps) {
     { href: "/database", label: t.database, icon: Database },
     { href: "/submit-data", label: t.submit, icon: Send },
     { href: "/admin", label: t.admin, icon: Settings2 },
-    { href: "/profile", label: t.profile, icon: CircleUserRound }
+    { href: "/profile", label: t.profile, icon: CircleUserRound },
+    { href: "/robot-models", label: "3D Models", icon: Box },
   ];
 
   return (
